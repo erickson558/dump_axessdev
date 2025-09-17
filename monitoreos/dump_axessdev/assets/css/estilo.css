@@ -1,0 +1,341 @@
+:root {
+    --transition-time: 0.4s;
+}
+
+/* Modo oscuro forzado */
+/* Modo oscuro */
+html.dark-mode h1 {
+    color: #e0e0e0 !important;
+}
+
+/* Modo claro */
+body h1 {
+    color: #2c2c2c;
+}
+html.dark-mode, 
+html.dark-mode body {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+html.dark-mode form {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+html.dark-mode .contact_input {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+}
+
+html.dark-mode .register {
+    background-color: #1565c0 !important;
+    color: #ffffff !important;
+}
+
+html.dark-mode .register:hover {
+    background-color: #0d47a1 !important;
+}
+
+html.dark-mode .terms {
+    color: #ffffff !important;
+}
+
+html.dark-mode footer {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+html.dark-mode .forgot-password {
+    color: #64b5f6 !important;
+}
+
+html.dark-mode input:invalid {
+    border-color: #ff6666 !important;
+}
+
+html.dark-mode input:valid {
+    border-color: #81C784 !important;
+}
+
+html.dark-mode .error-message {
+    color: #ff6666 !important;
+}
+
+/* Modo claro */
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+    transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+body h1 {
+    color: #2c2c2c;
+}
+
+body form {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+body .contact_input {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+body .register {
+    background-color: #1976d2;
+}
+
+body .register:hover {
+    background-color: #115293;
+}
+
+body footer {
+    background-color: #e0e0e0;
+}
+
+body .forgot-password {
+    color: #1e90ff;
+}
+
+body input:invalid {
+    border-color: #ff4444;
+}
+
+body input:valid {
+    border-color: #4CAF50;
+}
+
+body .error-message {
+    color: #ff4444;
+}
+
+/* Estilos comunes */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all var(--transition-time);
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    gap: 8px;
+}
+
+.contact {
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact_input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.terms input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.register {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.logo {
+    display: block;
+    margin: 30px auto;
+    max-width: 220px;
+    height: auto;
+    filter: brightness(0.9);
+}
+
+button#theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+button#theme-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text {
+    font-family: Tahoma, sans-serif;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    font-size: 0.9em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Notificaciones */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out, fadeOut 0.5s ease-out 4.5s;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.error {
+    background-color: #f44336;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Nuevos estilos para botones personalizados */
+.btn-custom {
+    background-color: #007bff; /* Color primario */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+.btn-custom:active {
+    background-color: #004080; /* Color al hacer clic */
+    transform: scale(0.95); /* Efecto de escala al hacer clic */
+}
+
+/* Estilos para el modo oscuro */
+html.dark-mode .btn-custom {
+    background-color: #1e90ff; /* Color más claro para modo oscuro */
+    color: #ffffff;
+}
+
+html.dark-mode .btn-custom:hover {
+    background-color: #0077cc; /* Color más oscuro al pasar el mouse en modo oscuro */
+}
+
+/* Estilos para el botón de Logout */
+.btn-logout {
+    background-color: #dc3545; /* Color rojo para el botón de Logout */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón de alternar modo oscuro/claro */
+#theme-toggle {
+    background-color: #6c757d; /* Color gris para el botón de tema */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #5a6268; /* Color más oscuro al pasar el mouse */
+}
