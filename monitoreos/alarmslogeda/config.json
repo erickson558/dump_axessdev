@@ -1,9 +1,9 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.7",
   "last_code_hash": "d9396dd28a6ac03d6fa3e8a3c313f64106ad5862d7911602dae3eb50587b5618",
   "window_geometry": "1040x720+100+100",
-  "autostart": false,
-  "autoclose_enabled": false,
+  "autostart": true,
+  "autoclose_enabled": true,
   "autoclose_seconds": 60,
   "status_text": "Verificando herramientas…",
   "shortcuts_enabled": true,
