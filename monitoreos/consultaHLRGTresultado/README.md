@@ -1,0 +1,3 @@
+# consultaHLRGTresultado
+
+Proyecto consultaHLRGTresultado.
